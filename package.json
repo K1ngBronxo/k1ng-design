@@ -1,0 +1,44 @@
+{
+  "name": "k1ng-design",
+  "version": "1.0.0",
+  "description": "MCP server that lets an AI design real UIs: artboards, HTML, exact computed styles, screenshots and JSX export. No app required.",
+  "type": "module",
+  "bin": {
+    "k1ng-design": "bin/k1ng-design.js"
+  },
+  "main": "src/server.js",
+  "exports": {
+    ".": "./src/server.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    ".claude",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node src/server.js",
+    "check": "node selfcheck.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "design",
+    "ui",
+    "ai",
+    "playwright",
+    "screenshot",
+    "jsx"
+  ],
+  "license": "MIT",
+  "author": "K1ngBronxo (https://github.com/K1ngBronxo)",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "node-html-parser": "^6.1.13",
+    "playwright": "^1.40.0"
+  }
+}
